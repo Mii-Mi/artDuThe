@@ -19,16 +19,29 @@
 
 <body>
     <header>
-       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
          <div class="container">
-             <a class="navbar-brand" href="/">Boutique du thé</a>
-              <div class="navbar-nav">
+           
+            <a class="navbar-brand" href="/">Boutique du thé</a>
+
+            <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#monMenu"
+            aria-controls="monMenu"
+            aria-label="Menu pour mobile"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+             <div class="collapse navbar-collapse" id="monMenu">
+                 <div class="navbar-nav ml-auto">
                   <a class="nav-item nav-link" href="/">Qui sommes-nous</a>
-                  <a class="nav-item nav-link" href="/">Nos produits</a>
-                  <a class="nav-item nav-link" href="/">Photos</a>
+                  <a class="nav-item nav-link" href="#nosProduits">Nos produits</a>
+                  <a class="nav-item nav-link" href="#photos">Photos</a>
                   <a class="nav-item nav-link" href="/">Nos Packs</a>
                   <a class="nav-item nav-link" href="/">Contact</a>
               </div>
+             </div>
          </div>
           
           
@@ -113,7 +126,7 @@
 
     <!-- FAMILLE DES THES
         ================================================ -->
-    <section class="famille-the">
+    <section class="famille-the" id="nosProduits">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -148,7 +161,7 @@
     <!-- GALERIE PHOTOS
         ================================================ -->
 
-    <section>
+    <section id="photos">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
